@@ -1,11 +1,11 @@
 /**
  * Assignment 1 exercise 5
- * Whale class
+ * Raccoon class
  * @author Thuy Tran
  * February 21, 2022 
  */
 
-public class Whale extends Animal implements Swimmer{
+public class Raccoon extends Animal implements Scratcher{
 	
     // variables
 	private String name;
@@ -14,15 +14,15 @@ public class Whale extends Animal implements Swimmer{
 	private double speed;
 
 	/**
-	 * Constructor of whale class
+	 * Constructor of raccoon class
 	 * @param type of an animal
-	 * @param name of a whale
+	 * @param name of a raccoon
 	 * @param environment an animal lives in
-	 * @param age of a whale
-	 * @param gender of a whale
-	 * @param speed of a whale
+	 * @param age of a raccoon
+	 * @param gender of a raccoon
+	 * @param speed of a raccoon
 	 */
-	public Whale(String type, String name, int age, String gender, String environment, double speed) {
+	public Raccoon(String type, String name, int age, String gender, String environment, double speed) {
 		super(type, environment);
 		this.name = name;
 		this.age = age;
@@ -31,56 +31,56 @@ public class Whale extends Animal implements Swimmer{
 	}
 
 	/**
-	 * getter for a whale's name
-	 * @return the whale name
+	 * getter for a raccoon's name
+	 * @return the raccoon name
 	 */
 	public String getName() {
 		return name;
 	}
 
     /**
-	 * setter for a whale's name
-	 * @param name of a whale
+	 * setter for a raccoon's name
+	 * @param name of a raccoon
 	 */
 	public void setName(String name) {
 		this.name = name;
 	}
 
 	/**
-	 * getter for a whale's age
-	 * @return whale's age
+	 * getter for a raccoon's age
+	 * @return raccoon's age
 	 */
 	public int getAge() {
 		return age;
 	}
 
     /**
-	 * setter for whale's age
-	 * @param age of a whale
+	 * setter for raccoon's age
+	 * @param age of a raccoon
 	 */
 	public void setAge(int age) {
 		this.age = age;
 	}
 
 	/**
-	 * getter for a whale's gender
-	 * @return whale's gender
+	 * getter for a raccoon's gender
+	 * @return raccoon's gender
 	 */
 	public String getGender() {
 		return gender;
 	}
 
     /**
-	 * setter for a new gender for whale
-	 * @param gender of a whale
+	 * setter for a new gender for raccoon
+	 * @param gender of a raccoon
 	 */
 	public void setGender(String gender) {
 		this.gender = gender;
 	}
 
 	/**
-	 * getter for a whale's speed
-	 * @return whale's speed
+	 * getter for a raccoon's speed
+	 * @return raccoon's speed
 	 */
 	public double getSpeed() {
 		return speed;
@@ -88,15 +88,15 @@ public class Whale extends Animal implements Swimmer{
 
 
 	/**
-	 * setter for a new speed for whale
-	 * @param speed of a whale
+	 * setter for a new speed for raccoon
+	 * @param speed of a raccoon
 	 */
 	public void setSpeed(double speed) {
 		this.speed = speed;
 	}
 
 	/**
-	 * convert Whale into a String
+	 * convert Raccoon into a String
 	 * in a format:
 	 * Type: <super.getType()>
 	 * Name: <name>
@@ -114,30 +114,29 @@ public class Whale extends Animal implements Swimmer{
 				"\nSpeed: " + speed ;
 	}
 
-    // some actions of the whale
-	@Override
-	public void swim() {
-		System.out.println("Swiming in ocean");
-		
-	}
-
+    // some actions of the raccoon
 	@Override
 	void move() {
-		System.out.println("Moving in ocean");
+		System.out.println("Moving on the tree");
 	}
 
 	@Override
 	void sound() {
-		System.out.println("Its sound in the range of 10 Hz to 31 kHz, and it is amazing");
+		System.out.println("Noise sound");
 	}
 
 	@Override
 	void eat() {
-		System.out.println("Fish and sea creatures");
+		System.out.println("Omnivores");
 	}
 
 	@Override
 	void sleep() {
-		System.out.println("Resting quietly in the water, or sleep while swimming slowly next to another animal");
-	}	
+		System.out.println("Sleep in their den.");
+	}
+
+    @Override
+	public void scratch() {
+		System.out.println("Like to scractch the tree and the others that harmful.");
+	}
 }

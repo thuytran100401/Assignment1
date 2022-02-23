@@ -70,13 +70,6 @@ public class Student {
      */
     public class Course {
         public void printSchedule() {
-//            for (int course = 0, time = 0; course < courseData.length; course++, time++) {
-//                if (time == 3) {
-//                    System.out.println();
-//                   time = 0;
-//                }
-//                System.out.print("" + courseData[course]);
-//            }
             System.out.println("CS151 Tue/Thur 6-7:15");
             System.out.println("Eng101 Mon/Wed 10-11:15");
             System.out.println("Hist100 Tue/Thur 1:30-2:45");
@@ -84,16 +77,10 @@ public class Student {
     }
 
     // method to display student information and schedule
-//    public void print(String course[]) {
+    @Override 
+    public String toString() {
         // display student information
-//        System.out.println(firstName + " " + lastName + ", " + age + " years old, "
-//        + gpa + " gpa, " + major + " major," + department + " department.");
-        
-//        System.out.println("\n ************** Course Schedule *************");
-
-        // create new Course
-//        Course cou = new Course();
-        // display course schedule
-//        cou.printSchedule(course);
-//    }
+        return firstName + " " + lastName + ", " + age + " years old, "
+        + gpa + " gpa, " + major + " major," + department + " department.";
+    }
 }

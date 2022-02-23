@@ -80,8 +80,8 @@ public class Person {
         return weight;
     }
 
-    public void setGender(double gender) {
-        this.gender = gender;
+    public void setWeight(double weight) {
+        this.weight = weight;
     }
 
     // method to prints the object information
