@@ -1,0 +1,9 @@
+Assignment 1, exercise 2
+
+Int is a primitive data type while Integer is a Wrapper class.
+- Int has got less flexibility than Integer, we can only store the binary value of an integer in it.
+- Since Integer is a class for int data type, it gives us more flexibility in storing, converting and manipulation an int data.
+- Integer is a class, so it contains various in-built methods and can call all of its. Variables of type Integer store references to Integer objects.
+- We can using Integer to assign a String value to an object of Integer type using its constructor (public Integer(String){}), but we can't assign String value to an int variable directly or casting.
+- We can using the method parseInt(String) in Integer class to convert a String to an int value.
+- We can use Integer's methods to convert an integer value had been stored to Binary, Octal or Hexadecimal format while we can not do it with int type.
