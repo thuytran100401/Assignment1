@@ -81,6 +81,6 @@ public class Student {
     public String toString() {
         // display student information
         return firstName + " " + lastName + ", " + age + " years old, "
-        + gpa + " gpa, " + major + " major," + department + " department.";
+        + gpa + " gpa, " + major + " major, " + department + " department.";
     }
 }
