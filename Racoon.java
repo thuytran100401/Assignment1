@@ -1,11 +1,11 @@
 /**
  * Assignment 1 exercise 5
- * Raccoon class
+ * Racoon class
  * @author Thuy Tran
  * February 21, 2022 
  */
 
-public class Raccoon extends Animal implements Scratcher{
+public class Racoon extends Animal implements Scratcher{
 	
     // variables
 	private String name;
@@ -22,7 +22,7 @@ public class Raccoon extends Animal implements Scratcher{
 	 * @param gender of a raccoon
 	 * @param speed of a raccoon
 	 */
-	public Raccoon(String type, String name, int age, String gender, String environment, double speed) {
+	public Racoon(String type, String name, int age, String gender, String environment, double speed) {
 		super(type, environment);
 		this.name = name;
 		this.age = age;
@@ -31,56 +31,56 @@ public class Raccoon extends Animal implements Scratcher{
 	}
 
 	/**
-	 * getter for a raccoon's name
-	 * @return the raccoon name
+	 * getter for a racoon's name
+	 * @return the racoon name
 	 */
 	public String getName() {
 		return name;
 	}
 
     /**
-	 * setter for a raccoon's name
-	 * @param name of a raccoon
+	 * setter for a racoon's name
+	 * @param name of a racoon
 	 */
 	public void setName(String name) {
 		this.name = name;
 	}
 
 	/**
-	 * getter for a raccoon's age
-	 * @return raccoon's age
+	 * getter for a racoon's age
+	 * @return racoon's age
 	 */
 	public int getAge() {
 		return age;
 	}
 
     /**
-	 * setter for raccoon's age
-	 * @param age of a raccoon
+	 * setter for racoon's age
+	 * @param age of a racoon
 	 */
 	public void setAge(int age) {
 		this.age = age;
 	}
 
 	/**
-	 * getter for a raccoon's gender
-	 * @return raccoon's gender
+	 * getter for a racoon's gender
+	 * @return racoon's gender
 	 */
 	public String getGender() {
 		return gender;
 	}
 
     /**
-	 * setter for a new gender for raccoon
-	 * @param gender of a raccoon
+	 * setter for a new gender for racoon
+	 * @param gender of a racoon
 	 */
 	public void setGender(String gender) {
 		this.gender = gender;
 	}
 
 	/**
-	 * getter for a raccoon's speed
-	 * @return raccoon's speed
+	 * getter for a racoon's speed
+	 * @return racoon's speed
 	 */
 	public double getSpeed() {
 		return speed;
@@ -88,15 +88,15 @@ public class Raccoon extends Animal implements Scratcher{
 
 
 	/**
-	 * setter for a new speed for raccoon
-	 * @param speed of a raccoon
+	 * setter for a new speed for racoon
+	 * @param speed of a racoon
 	 */
 	public void setSpeed(double speed) {
 		this.speed = speed;
 	}
 
 	/**
-	 * convert Raccoon into a String
+	 * convert Racoon into a String
 	 * in a format:
 	 * Type: <super.getType()>
 	 * Name: <name>
@@ -114,7 +114,7 @@ public class Raccoon extends Animal implements Scratcher{
 				"\nSpeed: " + speed ;
 	}
 
-    // some actions of the raccoon
+    // some actions of the racoon
 	@Override
 	void move() {
 		System.out.println("Moving on the tree");

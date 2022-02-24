@@ -27,8 +27,8 @@ public class AnimalTest {
 		list.add(whale);
 
         // create a new instance for Raccoon
-		Raccoon raccoon = new Raccoon("Raccoon", "Vin", 2, "female", "house", 15.00);
-		list.add(raccoon);
+		Racoon racoon = new Racoon("Raccoon", "Vin", 2, "female", "house", 15.00);
+		list.add(racoon);
 
         // display the animals information and its possible functionalities
 		for (int i = 0; i< list.size(); i++) {
@@ -50,8 +50,8 @@ public class AnimalTest {
 			else if(list.get(i).getType() == "Whale") {
 				whale.swim();
 			}
-			else if(list.get(i).getType() == "Raccoon") {
-				raccoon.scratch();
+			else if(list.get(i).getType() == "Racoon") {
+				racoon.scratch();
 			}
 			System.out.println("\n-----------------------------------------\n");
 		}
