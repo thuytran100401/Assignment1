@@ -19,10 +19,10 @@ public class Product {
 
     /**
      * Constructor of Product Class
-     * @param product name
-     * @param product description
-     * @param product price
-     * @param maximum quantity allowed to be ordered
+     * @param name product name
+     * @param description product description
+     * @param price product price
+     * @param maximum maximum quantity allowed to be ordered
      */
     public Product(String name, String description, double price, int maximum) {
         this.name = name;
@@ -41,7 +41,7 @@ public class Product {
 
     /**
      * setter for the product name
-     * @param product name
+     * @param name product name
      */
     public void setName(String name) {
         this.name = name;
@@ -57,7 +57,7 @@ public class Product {
 
     /**
      * setter for the product description
-     * @param product description
+     * @param description product description
      */
     public void setDescription(String description) {
         this.description = description;
@@ -73,7 +73,7 @@ public class Product {
 
     /**
      * setter for the product price
-     * @param product price
+     * @param price product price
      */
     public void setPrice(double price) {
         this.price = price;
@@ -89,7 +89,7 @@ public class Product {
 
     /**
      * setter for the maximum quantity allowed to be ordered
-     * @param maximum quantity allowed to be ordered
+     * @param maximum maximum quantity allowed to be ordered
      */
     public void setMaximum(int maximum) {
         this.maximum = maximum;
@@ -105,7 +105,7 @@ public class Product {
      */
     @Override
     public String toString() {
-        returm "Product Name: " + name +
+        return "Product Name: " + name +
                 "\nProduct Description: " + description +
                 "\nProduct Price: " + price +
                 "\nMaximum Quantity: " + maximum;

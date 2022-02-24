@@ -128,7 +128,7 @@ public class Whale extends Animal implements Swimmer{
 
 	@Override
 	void sound() {
-		System.out.println("Its sound in the range of 10 Hz to 31 kHz, and it is amazing");
+		System.out.println("Its sound in the range of 10 Hz to 31 kHz, and it is amazing.");
 	}
 
 	@Override
@@ -138,6 +138,6 @@ public class Whale extends Animal implements Swimmer{
 
 	@Override
 	void sleep() {
-		System.out.println("Resting quietly in the water, or sleep while swimming slowly next to another animal");
+		System.out.println("Resting quietly in the water, or sleep while swimming slowly next to another animal.");
 	}	
 }
